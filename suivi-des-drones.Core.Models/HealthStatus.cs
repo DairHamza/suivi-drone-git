@@ -22,6 +22,7 @@ namespace suivi_des_drones.Core.Models
         public string Label { get; init; } = default!;
         #endregion
     }
+
     //public class HealthStatus
     //{
     //    #region DroneStatus
@@ -35,6 +36,7 @@ namespace suivi_des_drones.Core.Models
     //    public string Label { get; set; } = default!;
     //    #endregion
     //}
+
     //public enum HealthStatus
     //{
     //    Ok = 0,
