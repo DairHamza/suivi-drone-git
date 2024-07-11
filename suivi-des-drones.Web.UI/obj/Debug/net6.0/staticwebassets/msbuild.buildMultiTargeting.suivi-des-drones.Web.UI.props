@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\suivi-des-drones.Web.UI.props" />
+</Project>

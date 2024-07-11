@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using suivi_des_drones.Core.Models;
 
 namespace suivi_des_drones.Web.UI.Pages
 {
@@ -14,7 +15,7 @@ namespace suivi_des_drones.Web.UI.Pages
 
         public void OnGet()
         {
-
+            var drone = new Drone();
         }
     }
 }
