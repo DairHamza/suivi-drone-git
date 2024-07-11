@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("suivi-des-drones.Core.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea24c761a033d7fab1106a79e798400756fe5414")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6abbbdb8bb34b56eff40e0fccc3549e621e61819")]
 [assembly: System.Reflection.AssemblyProductAttribute("suivi-des-drones.Core.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("suivi-des-drones.Core.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
