@@ -32,3 +32,7 @@ C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\obj\Debug\net6.0\suivi-des-drones.Web.UI.pdb
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\obj\Debug\net6.0\suivi-des-drones.Web.UI.genruntimeconfig.cache
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\obj\Debug\net6.0\ref\suivi-des-drones.Web.UI.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\bin\Debug\net6.0\suivi-des-drones.Core.Application.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\bin\Debug\net6.0\suivi-des-drones.Core.Interfaces.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\bin\Debug\net6.0\suivi-des-drones.Core.Application.pdb
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI\bin\Debug\net6.0\suivi-des-drones.Core.Interfaces.pdb

@@ -1,0 +1,15 @@
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\bin\Debug\net6.0\suivi-des-drones.Core.Interfaces.deps.json
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\bin\Debug\net6.0\suivi-des-drones.Core.Interfaces.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\bin\Debug\net6.0\suivi-des-drones.Core.Interfaces.pdb
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\bin\Debug\net6.0\suivi-des-drones.Core.Models.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\bin\Debug\net6.0\suivi-des-drones.Core.Models.pdb
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.csproj.AssemblyReference.cache
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.AssemblyInfoInputs.cache
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.AssemblyInfo.cs
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.csproj.CoreCompileInputs.cache
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-de.D6FF4A3A.Up2Date
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\refint\suivi-des-drones.Core.Interfaces.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\suivi-des-drones.Core.Interfaces.pdb
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Interfaces\obj\Debug\net6.0\ref\suivi-des-drones.Core.Interfaces.dll

@@ -1,10 +1,44 @@
 ﻿@page
+@using suivi_des_drones.Core.Models
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    string title = "Suivi des tickets".ToUpper();
 }
 
+@functions {
+    // List<Drone> Mylist = new();
+
+    List<Drone> PrepareDroneList()
+    {
+        // Model.OnGet();
+        return Model.Lista;
+    }
+
+
+}
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">@title</h1>
 </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Matricule</th>
+            <th>Date de creation</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in PrepareDroneList())
+        {
+            <tr>
+                <td>@item.Matricule</td>
+                <td>@item.CreationDate.ToString("dd MMMM yyyy")</td>
+                <td>OK</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+

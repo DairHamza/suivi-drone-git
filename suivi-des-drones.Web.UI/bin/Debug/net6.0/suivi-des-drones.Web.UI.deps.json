@@ -8,10 +8,29 @@
     ".NETCoreApp,Version=v6.0": {
       "suivi-des-drones.Web.UI/1.0.0": {
         "dependencies": {
+          "suivi-des-drones.Core.Application": "1.0.0",
+          "suivi-des-drones.Core.Interfaces": "1.0.0",
           "suivi-des-drones.Core.Models": "1.0.0"
         },
         "runtime": {
           "suivi-des-drones.Web.UI.dll": {}
+        }
+      },
+      "suivi-des-drones.Core.Application/1.0.0": {
+        "dependencies": {
+          "suivi-des-drones.Core.Interfaces": "1.0.0",
+          "suivi-des-drones.Core.Models": "1.0.0"
+        },
+        "runtime": {
+          "suivi-des-drones.Core.Application.dll": {}
+        }
+      },
+      "suivi-des-drones.Core.Interfaces/1.0.0": {
+        "dependencies": {
+          "suivi-des-drones.Core.Models": "1.0.0"
+        },
+        "runtime": {
+          "suivi-des-drones.Core.Interfaces.dll": {}
         }
       },
       "suivi-des-drones.Core.Models/1.0.0": {
@@ -23,6 +42,16 @@
   },
   "libraries": {
     "suivi-des-drones.Web.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "suivi-des-drones.Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "suivi-des-drones.Core.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

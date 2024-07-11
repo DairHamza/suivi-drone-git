@@ -20,7 +20,10 @@ namespace suivi_des_drones.Core.Application.Repositories
         /// <returns></returns>
         public List<Drone> GetAll()
         {
-            return new List<Drone>();
+            return new List<Drone> { 
+                new Drone { Matricule = "ABC123", CreationDate = DateTime.Now.AddDays(-100) },
+                new Drone { Matricule = "EFG456", CreationDate = DateTime.Now.AddDays(-60) }
+                };
         }
         #endregion
     }

@@ -1,9 +1,16 @@
+using suivi_des_drones.Core.Application.Repositories;
+using suivi_des_drones.Core.Interfaces.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+builder.Services.AddScoped<IDroneRepository, DroneRepository>();   
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

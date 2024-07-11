@@ -2,6 +2,33 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "suivi-des-drones.Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "suivi-des-drones.Core.Interfaces": "1.0.0",
+          "suivi-des-drones.Core.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/suivi-des-drones.Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/suivi-des-drones.Core.Application.dll": {}
+        }
+      },
+      "suivi-des-drones.Core.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "suivi-des-drones.Core.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/suivi-des-drones.Core.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/suivi-des-drones.Core.Interfaces.dll": {}
+        }
+      },
       "suivi-des-drones.Core.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +42,16 @@
     }
   },
   "libraries": {
+    "suivi-des-drones.Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../suivi-des-drones.Core.Application/suivi-des-drones.Core.Application.csproj",
+      "msbuildProject": "../suivi-des-drones.Core.Application/suivi-des-drones.Core.Application.csproj"
+    },
+    "suivi-des-drones.Core.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../suivi-des-drones.Core.Interfaces/suivi-des-drones.Core.Interfaces.csproj",
+      "msbuildProject": "../suivi-des-drones.Core.Interfaces/suivi-des-drones.Core.Interfaces.csproj"
+    },
     "suivi-des-drones.Core.Models/1.0.0": {
       "type": "project",
       "path": "../suivi-des-drones.Core.Models/suivi-des-drones.Core.Models.csproj",
@@ -23,6 +60,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "suivi-des-drones.Core.Application >= 1.0.0",
+      "suivi-des-drones.Core.Interfaces >= 1.0.0",
       "suivi-des-drones.Core.Models >= 1.0.0"
     ]
   },
@@ -62,6 +101,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Application\\suivi-des-drones.Core.Application.csproj": {
+              "projectPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Application\\suivi-des-drones.Core.Application.csproj"
+            },
+            "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Interfaces\\suivi-des-drones.Core.Interfaces.csproj": {
+              "projectPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Interfaces\\suivi-des-drones.Core.Interfaces.csproj"
+            },
             "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj": {
               "projectPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj"
             }
