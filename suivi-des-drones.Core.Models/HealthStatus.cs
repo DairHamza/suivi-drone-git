@@ -6,10 +6,26 @@ using System.Threading.Tasks;
 
 namespace suivi_des_drones.Core.Models
 {
-    public enum HealthStatus
+    /// <summary>
+    /// Les status possibles d'une drone
+    /// </summary>
+    public class HealthStatus
     {
-        Ok = 0,
-        Broken = -1,
-        Repair = -2
+        #region DroneStatus
+        public static HealthStatus Ok = new HealthStatus { Id = 0, Label = "Ok" };
+        public static HealthStatus Broken = new HealthStatus { Id = -1, Label = "Cassé" };
+        public static HealthStatus Repair = new HealthStatus { Id = -2, Label = "En réparation" };
+        #endregion
+
+        #region Properties
+        public int Id { get; set; } = 0;
+        public string Label { get; set; } = default!;
+        #endregion
     }
+    //public enum HealthStatus
+    //{
+    //    Ok = 0,
+    //    Broken = -1,
+    //    Repair = -2
+    //}
 }
