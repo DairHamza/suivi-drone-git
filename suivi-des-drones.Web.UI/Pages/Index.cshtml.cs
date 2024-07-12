@@ -22,9 +22,15 @@ namespace suivi_des_drones.Web.UI.Pages
             this.repository = repository;
         }
 
-        public void OnGet()
+        //public void OnGet()
+        //{
+
+        //}
+
+        public IActionResult OnGet()
         {
             setList();
+            return Page();
         }
 
         public List<Drone> setList()
