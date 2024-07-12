@@ -10,7 +10,7 @@ namespace suivi_des_drones.Web.UI.Pages
 
         #region Properties
         public List<Drone> ListOfDrones = new List<Drone>();
-        public List<string> ListOfStatus = new List<string>();
+        public List<HealthStatus> ListOfStatus = new List<HealthStatus>();
         IDroneRepository repository;
         //HealthStatus healthStatus;
         #endregion
@@ -18,11 +18,10 @@ namespace suivi_des_drones.Web.UI.Pages
 
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, IDroneRepository repository /*, HealthStatus healthStatus*/)
+        public IndexModel(ILogger<IndexModel> logger, IDroneRepository repository)
         {
             _logger = logger;
             this.repository = repository;
-            //this.healthStatus = healthStatus;
         }
 
         //public void OnGet()
@@ -43,11 +42,11 @@ namespace suivi_des_drones.Web.UI.Pages
             return ListOfDrones;
         }
 
-        public List<string> SetStatusList()
+        public List<HealthStatus> SetStatusList()
         {
-            ListOfStatus.Add(HealthStatus.Ok.Label);
-            ListOfStatus.Add(HealthStatus.Broken.Label);
-            ListOfStatus.Add(HealthStatus.Repair.Label);
+            ListOfStatus.Add(HealthStatus.Ok);
+            ListOfStatus.Add(HealthStatus.Broken);
+            ListOfStatus.Add(HealthStatus.Repair);
             return ListOfStatus;
         }
 

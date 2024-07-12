@@ -14,7 +14,7 @@
         // Model.OnGet();
         return this.Model.ListOfDrones;
     }
-    List<string> PrepareStatusList()
+    List<HealthStatus> PrepareStatusList()
     {
         // Model.OnGet();
         return this.Model.ListOfStatus;
@@ -27,14 +27,14 @@
 
 <div class="container">
     <div class="row align-items-start">
-        <div class="col">
+        <div class="col text-center">
             Drone Status
         </div>
         <div class="col">
             <select class="form-select">
                 @foreach (var status in PrepareStatusList())
                 {
-                    <option>@status</option>
+                    <option>@status.Label</option>
                 }
             </select>
         </div>
