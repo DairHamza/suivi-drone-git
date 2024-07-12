@@ -12,43 +12,46 @@ namespace suivi_des_drones.Web.UI.Pages
         public List<Drone> ListOfDrones = new List<Drone>();
         public List<HealthStatus> ListOfStatus = new List<HealthStatus>();
         IDroneRepository repository;
-        //HealthStatus healthStatus;
-        #endregion
-
-
         private readonly ILogger<IndexModel> _logger;
-
+        #endregion
+        
+        #region Constructors
         public IndexModel(ILogger<IndexModel> logger, IDroneRepository repository)
         {
             _logger = logger;
             this.repository = repository;
         }
+        #endregion
 
         //public void OnGet()
         //{
 
         //}
 
+        #region Public Methods
         public IActionResult OnGet()
         {
             SetDroneList();
             SetStatusList();
             return this.Page();
         }
+        #endregion
 
-        public List<Drone> SetDroneList()
+        #region Internal Methods
+        private List<Drone> SetDroneList()
         {
             ListOfDrones = repository.GetAll();
             return ListOfDrones;
         }
 
-        public List<HealthStatus> SetStatusList()
+        private List<HealthStatus> SetStatusList()
         {
             ListOfStatus.Add(HealthStatus.Ok);
             ListOfStatus.Add(HealthStatus.Broken);
             ListOfStatus.Add(HealthStatus.Repair);
             return ListOfStatus;
         }
+        #endregion
 
 
     }

@@ -40,7 +40,9 @@
         </div>
     </div>
 </div>
-<br /><br /><br />
+<br />
+<br />
+<br />
 <table class="table">
     <thead>
         <tr>
@@ -55,7 +57,20 @@
             <tr>
                 <td>@item.Matricule</td>
                 <td>@item.CreationDate.ToString("dd MMMM yyyy")</td>
-                <td>@item.HealthStatus.Label</td>
+
+                @{
+                    string style_color = "bg-success text-white rounded-pill";
+                    if (item.HealthStatus.Label == "Cassé")
+                    {
+                        style_color = "bg-danger text-white rounded-pill";
+                    }
+                    if (item.HealthStatus.Label == "En réparation")
+                    {
+                        style_color = "bg-warning rounded-pill";
+                    }
+                }
+
+                <td class="text-center @style_color">@item.HealthStatus.Label</td>
             </tr>
         }
     </tbody>
