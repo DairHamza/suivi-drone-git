@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj": {}
+    "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-drone-git\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj": {}
   },
   "projects": {
-    "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj": {
+    "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-drone-git\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj",
+        "projectUniqueName": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-drone-git\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj",
         "projectName": "suivi-des-drones.Core.Models",
-        "projectPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj",
+        "projectPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-drone-git\\suivi-des-drones.Core.Models\\suivi-des-drones.Core.Models.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-des-drones-V2\\suivi-des-drones.Core.Models\\obj\\",
+        "outputPath": "C:\\developpement\\razor-pages\\formation-razor-pages-resources\\suivi-drone-git\\suivi-des-drones.Core.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -51,7 +51,7 @@
             <th>Status</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody style="background-color:lightblue;">
         @foreach (var item in PrepareDroneList())
         {
             <tr>
@@ -59,14 +59,14 @@
                 <td>@item.CreationDate.ToString("dd MMMM yyyy")</td>
 
                 @{
-                    string style_color = "bg-success text-white rounded-pill";
+                    string style_color = "bg-success text-white rounded";
                     if (item.HealthStatus.Label == "Cassé")
                     {
-                        style_color = "bg-danger text-white rounded-pill";
+                        style_color = "bg-danger text-white rounded";
                     }
                     if (item.HealthStatus.Label == "En réparation")
                     {
-                        style_color = "bg-warning rounded-pill";
+                        style_color = "bg-warning rounded";
                     }
                 }
 
