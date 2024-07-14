@@ -12,7 +12,10 @@ namespace suivi_des_drones.Web.UI.Pages
         #region Properties
         public List<Drone> ListOfDrones = new List<Drone>();
         public List<HealthStatus> ListOfStatus = new List<HealthStatus>();
-        IDroneRepository repository;
+        #endregion
+
+        #region Fields
+        private readonly IDroneRepository repository;
         private readonly ILogger<IndexModel> _logger;
         #endregion
         
@@ -29,7 +32,7 @@ namespace suivi_des_drones.Web.UI.Pages
 
         //}
 
-        #region Public Methods
+        #region Public methods
         public IActionResult OnGet()
         {
             SetDroneList();
@@ -41,7 +44,7 @@ namespace suivi_des_drones.Web.UI.Pages
         #region Internal Methods
         private List<Drone> SetDroneList()
         {
-            ListOfDrones = repository.GetAll();
+            ListOfDrones = this.repository.GetAll();
             return ListOfDrones;
         }
 

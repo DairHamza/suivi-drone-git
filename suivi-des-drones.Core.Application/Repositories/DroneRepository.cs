@@ -14,8 +14,8 @@ namespace suivi_des_drones.Core.Application.Repositories
     /// </summary>
     public class DroneRepository : IDroneRepository
     {
-        #region Properties
-        public IDroneDataLayer droneDataLayer;
+        #region Fields
+        private readonly IDroneDataLayer droneDataLayer;
         #endregion
 
         #region Constructors
@@ -32,7 +32,7 @@ namespace suivi_des_drones.Core.Application.Repositories
         /// <returns></returns>
         public List<Drone> GetAll()
         {
-            List<Drone> MyListFromDataLayer = droneDataLayer.GetList();
+            List<Drone> MyListFromDataLayer = this.droneDataLayer.GetList();
             return MyListFromDataLayer;
         }
         #endregion
