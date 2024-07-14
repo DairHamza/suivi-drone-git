@@ -10,13 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+
 builder.Services.AddDbContext<DronesDbContext>(options =>
 {
-    options.UseSqlServer("localhost");
+    var connexionString = builder.Configuration.GetConnectionString("DroneContext");
+    options.UseSqlServer(connexionString);
 });
 
 builder.Services.AddScoped<IDroneDataLayer, SqlServerDroneDataLayer>();
 builder.Services.AddScoped<IDroneRepository, DroneRepository>();   
+
+
+
+
 
 var app = builder.Build();
 
