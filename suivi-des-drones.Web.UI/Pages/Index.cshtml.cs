@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using suivi_des_drones.Core.Infrastructure.DataBases;
 using suivi_des_drones.Core.Interfaces.Repositories;
 using suivi_des_drones.Core.Models;
 
@@ -16,7 +17,7 @@ namespace suivi_des_drones.Web.UI.Pages
         #endregion
         
         #region Constructors
-        public IndexModel(ILogger<IndexModel> logger, IDroneRepository repository)
+        public IndexModel(ILogger<IndexModel> logger, IDroneRepository repository,DronesDbContext context)
         {
             _logger = logger;
             this.repository = repository;

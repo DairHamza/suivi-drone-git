@@ -1,10 +1,17 @@
+using Microsoft.EntityFrameworkCore;
 using suivi_des_drones.Core.Application.Repositories;
+using suivi_des_drones.Core.Infrastructure.DataBases;
 using suivi_des_drones.Core.Interfaces.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<DronesDbContext>(options =>
+{
+    options.UseSqlServer("localhost");
+});
 
 builder.Services.AddScoped<IDroneRepository, DroneRepository>();   
 
