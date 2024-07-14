@@ -1,4 +1,5 @@
-﻿using suivi_des_drones.Core.Interfaces.Repositories;
+﻿using suivi_des_drones.Core.Interfaces.Infrastructure;
+using suivi_des_drones.Core.Interfaces.Repositories;
 using suivi_des_drones.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,17 @@ namespace suivi_des_drones.Core.Application.Repositories
     /// </summary>
     public class DroneRepository : IDroneRepository
     {
+        #region Properties
+        public IDroneDataLayer droneDataLayer;
+        #endregion
+
+        #region Constructors
+        public DroneRepository(IDroneDataLayer droneDataLayer)
+        {
+           this.droneDataLayer = droneDataLayer;
+        }
+        #endregion
+
         #region Public methods
         /// <summary>
         /// Retourne la liste complète des drones
@@ -20,14 +32,8 @@ namespace suivi_des_drones.Core.Application.Repositories
         /// <returns></returns>
         public List<Drone> GetAll()
         {
-            return new List<Drone> {
-                new Drone { Matricule = "ABC123", CreationDate = DateTime.Now.AddDays(-100), HealthStatus = HealthStatus.Ok },
-                new Drone { Matricule = "EFG456", CreationDate = DateTime.Now.AddDays(-60), HealthStatus = HealthStatus.Repair },
-                new Drone { Matricule = "HIJ789", CreationDate = DateTime.Now.AddDays(-30), HealthStatus = HealthStatus.Broken },
-                new Drone { Matricule = "KLM101", CreationDate = DateTime.Now.AddDays(-20), HealthStatus = HealthStatus.Broken},
-                new Drone { Matricule = "NOP112", CreationDate = DateTime.Now.AddDays(-40), HealthStatus = HealthStatus.Ok },
-                new Drone { Matricule = "QRS131", CreationDate = DateTime.Now.AddDays(-70), HealthStatus = HealthStatus.Repair }
-                };
+            List<Drone> MyListFromDataLayer = droneDataLayer.GetList();
+            return MyListFromDataLayer;
         }
         #endregion
     }

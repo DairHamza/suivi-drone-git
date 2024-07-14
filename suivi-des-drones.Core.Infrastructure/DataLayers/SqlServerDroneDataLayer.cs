@@ -11,16 +11,35 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
 {
     public class SqlServerDroneDataLayer : IDroneDataLayer
     {
+        #region Properties
+        DronesDbContext context;
+        #endregion
+
+        #region Constructors
+        public SqlServerDroneDataLayer(DronesDbContext context)
+        {
+            this.context = context;
+        }
+        #endregion
+
         #region Public Methods
         public List<Drone> GetList()
         {
-            using var context = new DronesDbContext();
+            //using var context = new DronesDbContext();
 
-            var query = from item in context.Drones
-                        //where item.CreationDate == DateTime.Now
-                        select item;
+            //var query = from item in context.Drones
+            //            //where item.CreationDate == DateTime.Now
+            //            select item;
 
-            return query.ToList();
+            //return query.ToList();
+            return new List<Drone> {
+                new Drone { Matricule = "ABC123", CreationDate = DateTime.Now.AddDays(-100), HealthStatus = HealthStatus.Ok },
+                new Drone { Matricule = "EFG456", CreationDate = DateTime.Now.AddDays(-60), HealthStatus = HealthStatus.Repair },
+                new Drone { Matricule = "HIJ789", CreationDate = DateTime.Now.AddDays(-30), HealthStatus = HealthStatus.Broken },
+                new Drone { Matricule = "KLM101", CreationDate = DateTime.Now.AddDays(-20), HealthStatus = HealthStatus.Broken},
+                new Drone { Matricule = "NOP112", CreationDate = DateTime.Now.AddDays(-40), HealthStatus = HealthStatus.Ok },
+                new Drone { Matricule = "QRS131", CreationDate = DateTime.Now.AddDays(-70), HealthStatus = HealthStatus.Repair }
+                };
         }
         #endregion
     }
