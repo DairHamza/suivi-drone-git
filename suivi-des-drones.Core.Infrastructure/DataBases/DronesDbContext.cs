@@ -20,6 +20,14 @@ namespace suivi_des_drones.Core.Infrastructure.DataBases
         }
         #endregion
 
+        #region Public methods
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Drone>().HasKey(item => item.Matricule);
+        }
+
+        #endregion
+
         #region
         public DbSet<Drone> Drones { get; set; }
         #endregion

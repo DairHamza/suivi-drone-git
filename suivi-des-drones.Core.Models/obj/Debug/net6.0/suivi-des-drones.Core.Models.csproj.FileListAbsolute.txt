@@ -21,3 +21,4 @@ C:\developpement\razor-pages\formation-razor-pages-resources\suivi-drone-git\sui
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-drone-git\suivi-des-drones.Core.Models\obj\Debug\net6.0\refint\suivi-des-drones.Core.Models.dll
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-drone-git\suivi-des-drones.Core.Models\obj\Debug\net6.0\suivi-des-drones.Core.Models.pdb
 C:\developpement\razor-pages\formation-razor-pages-resources\suivi-drone-git\suivi-des-drones.Core.Models\obj\Debug\net6.0\ref\suivi-des-drones.Core.Models.dll
+C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Core.Models\obj\Debug\net6.0\suivi-des-drones.Core.Models.sourcelink.json

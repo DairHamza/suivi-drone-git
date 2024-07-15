@@ -21,9 +21,6 @@ builder.Services.AddScoped<IDroneDataLayer, SqlServerDroneDataLayer>();
 builder.Services.AddScoped<IDroneRepository, DroneRepository>();   
 
 
-
-
-
 var app = builder.Build();
 
 
