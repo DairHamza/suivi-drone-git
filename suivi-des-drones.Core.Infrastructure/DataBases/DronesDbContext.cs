@@ -23,7 +23,8 @@ namespace suivi_des_drones.Core.Infrastructure.DataBases
         #region Public methods
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Drone>().HasKey(item => item.Matricule);
+            modelBuilder.ApplyConfiguration(new EntityConfiguration.DroneEntityTypeConfiguration());
+            //modelBuilder.Entity<Drone>().HasKey(item => item.Matricule);
         }
 
         #endregion

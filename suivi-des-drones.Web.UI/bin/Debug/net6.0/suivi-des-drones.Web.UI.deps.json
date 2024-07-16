@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "suivi-des-drones.Web.UI/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.32",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.32",
           "suivi-des-drones.Core.Application": "1.0.0",
           "suivi-des-drones.Core.Infrastructure": "1.0.0",
@@ -443,6 +444,7 @@
       },
       "suivi-des-drones.Core.Interfaces/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.32",
           "suivi-des-drones.Core.Models": "1.0.0"
         },
         "runtime": {

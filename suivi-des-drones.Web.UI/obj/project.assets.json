@@ -771,6 +771,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.32",
           "suivi-des-drones.Core.Models": "1.0.0"
         },
         "compile": {
@@ -1978,6 +1979,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore.Relational >= 6.0.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.32",
       "suivi-des-drones.Core.Application >= 1.0.0",
       "suivi-des-drones.Core.Infrastructure >= 1.0.0",
@@ -2051,6 +2053,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[6.0.32, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.32, )"
