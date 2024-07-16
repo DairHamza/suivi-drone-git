@@ -18,7 +18,7 @@ namespace suivi_des_drones.Core.Models
         #endregion
 
         #region Properties
-        public int Id { get; init; }
+        public decimal Id { get; init; }
         public string Label { get; init; } = default!;
         #endregion
     }

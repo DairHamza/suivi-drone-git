@@ -17,5 +17,6 @@ namespace suivi_des_drones.Core.Interfaces.Infrastructure
         /// </summary>
         /// <returns></returns>
         public List<Drone> GetList ();
+        public List<HealthStatus> GetStatuses();
     }
 }

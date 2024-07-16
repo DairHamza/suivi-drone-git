@@ -39,6 +39,15 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
             //    new Drone { Matricule = "QRS131", CreationDate = DateTime.Now.AddDays(-70), HealthStatus = HealthStatus.Repair }
             //    };
         }
-        #endregion
-    }
+
+        public List<HealthStatus> GetStatuses()
+        {
+            var query = from item in this.context?.HealthStatuses
+                            //where item.CreationDate == DateTime.Now
+                        select item;
+
+            return query.ToList();
+        }
+            #endregion
+        }
 }

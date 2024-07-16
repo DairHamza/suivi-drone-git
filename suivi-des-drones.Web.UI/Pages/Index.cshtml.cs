@@ -48,13 +48,19 @@ namespace suivi_des_drones.Web.UI.Pages
             return ListOfDrones;
         }
 
+
         private List<HealthStatus> SetStatusList()
         {
-            ListOfStatus.Add(HealthStatus.Ok);
-            ListOfStatus.Add(HealthStatus.Broken);
-            ListOfStatus.Add(HealthStatus.Repair);
+            ListOfStatus = this.repository.GetAllStatus();
             return ListOfStatus;
         }
+        //private List<HealthStatus> SetStatusList()
+        //{
+        //    ListOfStatus.Add(HealthStatus.Ok);
+        //    ListOfStatus.Add(HealthStatus.Broken);
+        //    ListOfStatus.Add(HealthStatus.Repair);
+        //    return ListOfStatus;
+        //}
         #endregion
 
 

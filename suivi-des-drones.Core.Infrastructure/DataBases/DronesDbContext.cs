@@ -24,6 +24,7 @@ namespace suivi_des_drones.Core.Infrastructure.DataBases
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new EntityConfiguration.DroneEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new EntityConfiguration.HealthStatusEntityTypeConfiguration());
             //modelBuilder.Entity<Drone>().HasKey(item => item.Matricule);
         }
 
@@ -31,6 +32,7 @@ namespace suivi_des_drones.Core.Infrastructure.DataBases
 
         #region
         public DbSet<Drone> Drones { get; set; }
+        public DbSet<HealthStatus> HealthStatuses { get; set; }
         #endregion
     }
 
