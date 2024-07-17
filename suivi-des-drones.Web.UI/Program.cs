@@ -8,7 +8,11 @@ using suivi_des_drones.Core.Interfaces.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+                .AddRazorPagesOptions(option =>
+                {
+                    option.Conventions.AddPageRoute("/CreateDrone", "creation-drone");
+                });
 
 
 builder.Services.AddDbContext<DronesDbContext>(options =>
@@ -18,7 +22,7 @@ builder.Services.AddDbContext<DronesDbContext>(options =>
 });
 
 builder.Services.AddScoped<IDroneDataLayer, SqlServerDroneDataLayer>();
-builder.Services.AddScoped<IDroneRepository, DroneRepository>();   
+builder.Services.AddScoped<IDroneRepository, DroneRepository>();
 
 
 var app = builder.Build();
