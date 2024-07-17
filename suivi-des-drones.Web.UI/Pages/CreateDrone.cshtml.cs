@@ -6,7 +6,7 @@ namespace suivi_des_drones.Web.UI.Pages
 {
     public class CreateDroneModel : PageModel
     {
-        public void OnPost(Drone drone)
+        public void OnPost()
         {
             //premiere methode
             //string recuprerInfos = this.Request.Form["matricule"];
@@ -14,6 +14,12 @@ namespace suivi_des_drones.Web.UI.Pages
             //deuxieme approche recuperation des donnée formulaire via params de la methode
 
             //troisieme approche via un objet Drone
+
+            
         }
+        //quatrieme method est la plus rocommandé : BindProperty
+
+        [BindProperty]
+        public Drone Drone { get; set; }    
     }
 }
