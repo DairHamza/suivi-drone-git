@@ -1,0 +1,79 @@
+﻿@page
+@using suivi_des_drones.Core.Models
+@model IndexOldModel
+@{
+    ViewData["Title"] = "Home page";
+    string title = "Suivi des tickets".ToUpper();
+}
+
+@functions {
+    // List<Drone> Mylist = new();
+
+    List<Drone> PrepareDroneList()
+    {
+        // Model.OnGet();
+        return this.Model.ListOfDrones;
+    }
+    List<HealthStatus> PrepareStatusList()
+    {
+        // Model.OnGet();
+        return this.Model.ListOfStatus;
+    }
+
+}
+<div class="text-center">
+    <h1 class="display-4">@("OLD " + title)</h1>
+</div>
+
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col text-center">
+            Drone Status
+        </div>
+        <div class="col">
+            <select class="form-select">
+                @foreach (var status in PrepareStatusList())
+                {
+                    <option>@status.Label</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Matricule</th>
+            <th>Date de creation</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody style="background-color:lightblue;">
+        @foreach (var item in PrepareDroneList())
+        {
+            <tr>
+                <td>@item.Matricule</td>
+                <td>@item.CreationDate.ToString("dd MMMM yyyy")</td>
+
+                @{
+                    string style_color = "bg-success text-white rounded";
+                    if (item.HealthStatus.Label == "Cassé")
+                    {
+                        style_color = "bg-danger text-white rounded";
+                    }
+                    if (item.HealthStatus.Label == "En réparation")
+                    {
+                        style_color = "bg-warning rounded";
+                    }
+                }
+
+                <td class="text-center @style_color">@item.HealthStatus.Label</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+

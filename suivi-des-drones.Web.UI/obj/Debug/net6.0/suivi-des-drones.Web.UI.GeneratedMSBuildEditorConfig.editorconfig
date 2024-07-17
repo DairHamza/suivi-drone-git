@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\developpement\razor-pages\formation-razor-pages-resources\suivi-des-drones-V2\suivi-des-drones.Web.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/developpement/razor-pages/formation-razor-pages-resources/suivi-des-drones-V2/suivi-des-drones.Web.UI/Pages/CreateDrone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlRHJvbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/developpement/razor-pages/formation-razor-pages-resources/suivi-des-drones-V2/suivi-des-drones.Web.UI/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/developpement/razor-pages/formation-razor-pages-resources/suivi-des-drones-V2/suivi-des-drones.Web.UI/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/developpement/razor-pages/formation-razor-pages-resources/suivi-des-drones-V2/suivi-des-drones.Web.UI/Pages/IndexOld.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhPbGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/developpement/razor-pages/formation-razor-pages-resources/suivi-des-drones-V2/suivi-des-drones.Web.UI/Pages/Privacy.cshtml]

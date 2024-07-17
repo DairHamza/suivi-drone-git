@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "suivi-des-drones.Core.Inter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "suivi-des-drones.Core.Application", "suivi-des-drones.Core.Application\suivi-des-drones.Core.Application.csproj", "{47E38F2A-45C5-4FA7-AC72-B2822D758E3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suivi-des-drones.Core.Infrastructure", "suivi-des-drones.Core.Infrastructure\suivi-des-drones.Core.Infrastructure.csproj", "{488C60FB-B902-44B8-A046-C99D91BFA657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "suivi-des-drones.Core.Infrastructure", "suivi-des-drones.Core.Infrastructure\suivi-des-drones.Core.Infrastructure.csproj", "{488C60FB-B902-44B8-A046-C99D91BFA657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
