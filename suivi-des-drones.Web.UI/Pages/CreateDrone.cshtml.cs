@@ -5,10 +5,10 @@ namespace suivi_des_drones.Web.UI.Pages
 {
     public class CreateDroneModel : PageModel
     {
-        public void OnPost()
+        public void OnPost(string matricule, string dateCreation)
         {
             //premiere methode
-            string recuprerInfos = this.Request.Form["matricule"];
+            //string recuprerInfos = this.Request.Form["matricule"];
         }
     }
 }
