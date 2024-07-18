@@ -26,7 +26,7 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
         public List<Drone> GetList()
         {
             var query = from item in this.context?.Drones
-                        //where item.CreationDate == DateTime.Now
+                            //where item.CreationDate == DateTime.Now
                         select item;
 
             return query.ToList();
@@ -52,6 +52,11 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
         public void AddDrone(Drone drone)
         {
             this.context?.Drones.Add(drone);
+
+
+            var entry = this.context?.Entry(drone.HealthStatus);
+            entry.State = Microsoft.EntityFrameworkCore.EntityState.Unchanged;
+
             this.context?.SaveChanges();
         }
         #endregion
