@@ -17,9 +17,9 @@ namespace suivi_des_drones.Web.UI.Pages
 
             
         }
-        //quatrieme method est la plus rocommandé : BindProperty
+        //quatrieme method est la plus rocommandée : BindProperty
 
         [BindProperty]
-        public Drone Drone { get; set; }    
+        public Drone MyDrone { get; set; }    
     }
 }
