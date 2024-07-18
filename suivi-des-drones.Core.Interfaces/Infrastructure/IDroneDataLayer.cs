@@ -12,11 +12,22 @@ namespace suivi_des_drones.Core.Interfaces.Infrastructure
     /// </summary>
     public interface IDroneDataLayer
     {
+        #region Public methods
         /// <summary>
-        /// Retourne la list complète des drones
+        /// Retourne la liste complète des drones
         /// </summary>
         /// <returns></returns>
-        public List<Drone> GetList ();
-        public List<HealthStatus> GetStatuses();
+        List<Drone> GetList ();
+        /// <summary>
+        /// Retourne la liste des status
+        /// </summary>
+        /// <returns></returns>
+        List<HealthStatus> GetStatuses();
+        /// <summary>
+        /// Ajouter un drone dans la base de données
+        /// </summary>
+        /// <param name="drone"></param>
+        void AddDrone(Drone drone);
+        #endregion
     }
 }

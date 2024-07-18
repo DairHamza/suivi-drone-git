@@ -41,6 +41,12 @@ namespace suivi_des_drones.Core.Application.Repositories
             List<HealthStatus> MyStatusListFromDataLayer = this.droneDataLayer.GetStatuses();
             return MyStatusListFromDataLayer;
         }
+
+        public void SaveDrone(Drone drone)
+        {
+            drone.HealthStatus = HealthStatus.Ok;
+            this.droneDataLayer.AddDrone(drone);
+        }
         #endregion
     }
 }

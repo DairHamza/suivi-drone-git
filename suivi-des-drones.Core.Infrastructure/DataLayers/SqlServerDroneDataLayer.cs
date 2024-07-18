@@ -48,6 +48,12 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
 
             return query.ToList();
         }
-            #endregion
+
+        public void AddDrone(Drone drone)
+        {
+            this.context?.Drones.Add(drone);
+            this.context?.SaveChanges();
         }
+        #endregion
+    }
 }

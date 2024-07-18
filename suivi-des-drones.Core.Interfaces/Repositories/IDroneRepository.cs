@@ -14,5 +14,7 @@ namespace suivi_des_drones.Core.Interfaces.Repositories
     {
         List<Drone> GetAll();
         List<HealthStatus> GetAllStatus();
+
+        void SaveDrone(Drone drone);
     }
 }
