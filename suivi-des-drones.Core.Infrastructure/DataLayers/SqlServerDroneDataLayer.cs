@@ -1,4 +1,5 @@
-﻿using suivi_des_drones.Core.Infrastructure.DataBases;
+﻿using Microsoft.EntityFrameworkCore;
+using suivi_des_drones.Core.Infrastructure.DataBases;
 using suivi_des_drones.Core.Interfaces.Infrastructure;
 using suivi_des_drones.Core.Models;
 using System;
@@ -55,8 +56,7 @@ namespace suivi_des_drones.Core.Infrastructure.DataLayers
 
 
             var entry = this.context?.Entry(drone.HealthStatus);
-            entry.State = Microsoft.EntityFrameworkCore.EntityState.Unchanged;
-
+            entry.State = EntityState.Unchanged;
             this.context?.SaveChanges();
         }
         #endregion
